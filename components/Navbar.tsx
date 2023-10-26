@@ -4,7 +4,7 @@ import { Menubar, MenubarMenu, MenubarTrigger } from '@/components/ui/menubar';
 
 export default function Navbar() {
     return (
-        <div className="sticky top-0 flex flex-col items-center justify-center w-full h-full pt-10">
+        <div className="sticky top-0 flex flex-col items-center justify-center w-full h-full pt-10 z-50">
             <Menubar className="gap-1 rounded-full">
                 <MenubarMenu>
                     <Link href={'/'}>
