@@ -1,7 +1,15 @@
 import Link from 'next/link';
+import ProjectsList from '@/components/ProjectsList';
+import { Projects, projects } from '@/lib/projects';
 import { Separator } from '@/components/ui/separator';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
+    let latestProjects = [];
+    for (let i = 0; i < 3; i++) {
+        latestProjects.push(projects[i]);
+    }
+
     return (
         <div className="flex flex-col items-center justify-center w-full h-full pt-36">
             <div className="w-1/2 items-start justify-start">
@@ -23,9 +31,9 @@ export default function Home() {
                 </p>
             </div>
 
-            <Separator className="w-1/2 bg-zinc-500" />
+            <Separator className="w-4/5 bg-zinc-500" />
 
-            <section className="my-8 text-start w-1/2 items-start justify-start">
+            <section className="my-8 text-start w-4/5 items-start justify-start">
                 <p className="text-2xl text-white font-bold tracking-wide pb-16">
                     My Timeline
                 </p>
@@ -125,14 +133,30 @@ export default function Home() {
                 </div>
             </section>
 
-            <Separator className="w-1/2 bg-zinc-500" />
+            <Separator className="w-4/5 bg-zinc-500" />
 
-            <section className="my-8 text-start w-1/2 items-start justify-start">
-                <p className="text-2xl text-white font-bold tracking-wide pb-16">
+            <section className="mt-8 mb-4 text-start w-4/5 items-start justify-start">
+                <p className="items-center text-2xl text-white font-bold tracking-wide pb-8">
                     Projects
                 </p>
-                
+                <ProjectsList projects={latestProjects} />
+            </section>
 
+            <Button
+                className="flex w-52 py-7 text-xl items-center justify-center bg-black rounded-full hover:bg-gradient-to-r from-fuchsia-500 to-cyan-500 transition-all duration-700"
+                variant={'outline'}
+            >
+                View All
+            </Button>
+
+            <Separator className="w-4/5 bg-zinc-500 mt-8" />
+
+            <section className="mt-8 mb-4 text-start w-4/5 items-start justify-start">
+                <p className="items-center text-2xl text-white font-bold tracking-wide pb-8">
+                    Tech I know
+                </p>
+
+                
             </section>
         </div>
     );
