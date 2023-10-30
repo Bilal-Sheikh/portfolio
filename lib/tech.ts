@@ -8,6 +8,12 @@ import {
     SiCss3,
     SiJavascript,
     SiTypescript,
+    SiTailwindcss,
+    SiPostgresql,
+    SiPython,
+    SiAmazonaws,
+    SiDocker,
+    SiMui,
 } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 
@@ -55,5 +61,25 @@ export const tech = [
     {
         name: 'TypeScript',
         icon: SiTypescript,
+    },
+    {
+        name: 'Tailwind',
+        icon: SiTailwindcss,
+    },
+    {
+        name: 'PostgreSQL',
+        icon: SiPostgresql,
+    },
+    {
+        name: 'Python',
+        icon: SiPython,
+    },
+    {
+        name: 'AWS',
+        icon: SiAmazonaws,
+    },
+    {
+        name: 'Docker',
+        icon: SiDocker,
     },
 ];
