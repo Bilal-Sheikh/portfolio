@@ -1,16 +1,10 @@
-import Link from 'next/link';
+import Connect from '@/components/Connect';
+import UsesList from '@/components/UsesList';
+import TechList from '@/components/TechList';
 import ProjectsList from '@/components/ProjectsList';
 import { projects } from '@/lib/projects';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { tech } from '@/lib/tech';
-import {
-    Card,
-    CardHeader,
-    CardFooter,
-    CardContent,
-} from '@/components/ui/card';
-import { uses } from '@/lib/uses';
 
 export default function Home() {
     let latestProjects = [];
@@ -164,16 +158,7 @@ export default function Home() {
                     Technologies I know
                 </p>
 
-                <div className="grid grid-cols-6 gap-3">
-                    {tech.map((item) => (
-                        <Card className="flex flex-col items-center justify-center hover:shadow-lg hover:shadow-sky-400/70 transition-all duration-300">
-                            <CardHeader>{item.icon}</CardHeader>
-                            <CardContent className="text-lg">
-                                {item.name}
-                            </CardContent>
-                        </Card>
-                    ))}
-                </div>
+                <TechList />
             </section>
 
             <Separator className="w-4/5 bg-zinc-500 mt-8" />
@@ -183,16 +168,17 @@ export default function Home() {
                     Stuff I use
                 </p>
 
-                <div className="grid grid-cols-6 gap-3">
-                    {uses.map((item) => (
-                        <Card className="flex flex-col items-center justify-center hover:shadow-lg hover:shadow-indigo-400/70 transition-all duration-300">
-                            <CardHeader>{item.icon}</CardHeader>
-                            <CardContent className="text-lg">
-                                {item.name}
-                            </CardContent>
-                        </Card>
-                    ))}
-                </div>
+                <UsesList />
+            </section>
+
+            <Separator className="w-4/5 bg-zinc-500 mt-8" />
+
+            <section className="mt-8 mb-4 text-start w-4/5 items-start justify-start">
+                <p className="items-center text-2xl text-white font-bold tracking-wide pb-8">
+                    Thanks for scrolling!
+                </p>
+
+                <Connect />
             </section>
         </div>
     );
