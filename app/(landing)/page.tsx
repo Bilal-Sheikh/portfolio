@@ -10,6 +10,7 @@ import {
     CardFooter,
     CardContent,
 } from '@/components/ui/card';
+import { uses } from '@/lib/uses';
 
 export default function Home() {
     let latestProjects = [];
@@ -181,6 +182,17 @@ export default function Home() {
                 <p className="items-center text-2xl text-white font-bold tracking-wide pb-8">
                     Stuff I use
                 </p>
+
+                <div className="grid grid-cols-6 gap-3">
+                    {uses.map((item) => (
+                        <Card className="flex flex-col items-center justify-center hover:shadow-lg hover:shadow-indigo-400/70 transition-all duration-300">
+                            <CardHeader>{item.icon}</CardHeader>
+                            <CardContent className="text-lg">
+                                {item.name}
+                            </CardContent>
+                        </Card>
+                    ))}
+                </div>
             </section>
         </div>
     );
