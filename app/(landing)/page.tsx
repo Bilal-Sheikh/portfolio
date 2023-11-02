@@ -1,8 +1,15 @@
 import Link from 'next/link';
 import ProjectsList from '@/components/ProjectsList';
-import { Projects, projects } from '@/lib/projects';
-import { Separator } from '@/components/ui/separator';
+import { projects } from '@/lib/projects';
 import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
+import { tech } from '@/lib/tech';
+import {
+    Card,
+    CardHeader,
+    CardFooter,
+    CardContent,
+} from '@/components/ui/card';
 
 export default function Home() {
     let latestProjects = [];
@@ -153,10 +160,27 @@ export default function Home() {
 
             <section className="mt-8 mb-4 text-start w-4/5 items-start justify-start">
                 <p className="items-center text-2xl text-white font-bold tracking-wide pb-8">
-                    Tech I know
+                    Technologies I know
                 </p>
 
-                
+                <div className="grid grid-cols-6 gap-3">
+                    {tech.map((item) => (
+                        <Card className="flex flex-col items-center justify-center hover:shadow-lg hover:shadow-sky-400/70 transition-all duration-300">
+                            <CardHeader>{item.icon}</CardHeader>
+                            <CardContent className="text-lg">
+                                {item.name}
+                            </CardContent>
+                        </Card>
+                    ))}
+                </div>
+            </section>
+
+            <Separator className="w-4/5 bg-zinc-500 mt-8" />
+
+            <section className="mt-8 mb-4 text-start w-4/5 items-start justify-start">
+                <p className="items-center text-2xl text-white font-bold tracking-wide pb-8">
+                    Stuff I use
+                </p>
             </section>
         </div>
     );
