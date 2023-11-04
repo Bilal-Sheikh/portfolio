@@ -1,18 +1,24 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Projects } from '@/lib/projects';
 import { ExternalLink } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useRouter } from 'next/navigation';
 
 export default function ProjectsList({ projects }: { projects: Projects[] }) {
+    const router = useRouter();
+
     return (
         <div>
             {projects.map((project) => (
                 <div className="py-4">
                     <Card
-                        className="group md:flex hover:bg-slate-100 hover:text-slate-900 transition-all duration-300"
+                        className="group md:flex hover:bg-slate-100 hover:text-slate-900 transition-all duration-300 cursor-pointer"
                         key={project.id}
+                        onClick={() => router.push(`/projects/${project.id}`)}
                     >
                         <div className="md:shrink-0">
                             <Image
@@ -27,7 +33,7 @@ export default function ProjectsList({ projects }: { projects: Projects[] }) {
                                 <CardTitle className="flex items-center text-xl font-bold">
                                     {project.name}
                                     <Link
-                                        href={project.link}
+                                        href={project.projectLink}
                                         target="_blank"
                                     ></Link>
                                     <ExternalLink
@@ -38,7 +44,7 @@ export default function ProjectsList({ projects }: { projects: Projects[] }) {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent className="text-zinc-400 group-hover:text-zinc-800">
-                                <p>{project.description}</p>
+                                <p>{project.shortDescription}</p>
                             </CardContent>
                         </div>
                     </Card>

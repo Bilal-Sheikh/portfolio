@@ -5,6 +5,7 @@ import ProjectsList from '@/components/ProjectsList';
 import { projects } from '@/lib/projects';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
+import Link from 'next/link';
 
 export default function Home() {
     let latestProjects = [];
@@ -144,12 +145,14 @@ export default function Home() {
                 <ProjectsList projects={latestProjects} />
             </section>
 
-            <Button
-                className="flex w-52 py-7 text-xl items-center justify-center bg-black rounded-full hover:bg-gradient-to-r from-fuchsia-500 to-cyan-500 transition-all duration-700"
-                variant={'outline'}
-            >
-                View All
-            </Button>
+            <Link href={'/projects'}>
+                <Button
+                    className="flex w-52 py-7 text-xl items-center justify-center bg-black rounded-full hover:bg-gradient-to-r from-fuchsia-500 to-cyan-500 transition-all duration-700"
+                    variant={'outline'}
+                >
+                    View All
+                </Button>
+            </Link>
 
             <Separator className="w-4/5 bg-zinc-500 mt-8" />
 
