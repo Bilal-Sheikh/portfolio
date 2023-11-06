@@ -28,7 +28,7 @@ export default function Home() {
 
             <div className="my-8 text-start w-1/2 items-start justify-start">
                 <p className="text-xl text-zinc-400">
-                    Hi, my name is Bilal Sheikh. I'm a Full Stack Developer,
+                    Hi, my name is Bilal Sheikh. I'm a Full Stack Developer
                     passionate about creating innovative web solutions. Welcome
                     to my portfolio!
                 </p>
@@ -176,7 +176,7 @@ export default function Home() {
 
             <Separator className="w-4/5 bg-zinc-500 mt-8" />
 
-            <section className="mt-8 mb-4 text-start w-4/5 items-start justify-start">
+            <section className="mt-8 mb-20 text-start w-4/5 items-start justify-start">
                 <p className="items-center text-2xl text-white font-bold tracking-wide pb-8">
                     Thanks for scrolling!
                 </p>
@@ -186,3 +186,55 @@ export default function Home() {
         </div>
     );
 }
+
+// /**
+//  * v0 by Vercel.
+//  * @see https://v0.dev/t/lrXmDhWXMfu
+//  */
+// export default function Component() {
+//     return (
+//       <section key="1" className="relative m-4">
+//         <div className="border-l-2 border-gray-300 dark:border-gray-700 h-full ml-8 pl-8">
+//           <div className="mb-8 flex justify-between items-center w-full right-timeline">
+//             <div className="order-1 w-5/12" />
+//             <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full text-white relative overflow-visible border-2 border-white dark:bg-gray-200 dark:text-gray-800 dark:border-gray-600" />
+//             <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+//               <h3 className="mb-3 font-bold text-gray-800 text-xl dark:text-gray-200">Event Title One</h3>
+//               <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100">
+//                 Description for event one.
+//               </p>
+//             </div>
+//           </div>
+//           <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-800 dark:bg-gray-200" />
+//           <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+//             <div className="order-1 w-5/12" />
+//             <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full text-white relative overflow-visible border-2 border-white dark:bg-gray-200 dark:text-gray-800 dark:border-gray-600">
+//               <h1 className="mx-auto font-semibold text-lg">2</h1>
+//             </div>
+//             <div className="order-1 bg-blue-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+//               <h3 className="mb-3 font-bold text-white text-xl">Event Title Two</h3>
+//               <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
+//                 Description for event two.
+//               </p>
+//             </div>
+//           </div>
+//           <div className="absolute left-4 top-32 bottom-16 w-0.5 bg-gray-800 dark:bg-gray-200" />
+//           <div className="mb-8 flex justify-between items-center w-full right-timeline">
+//             <div className="order-1 w-5/12" />
+//             <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full text-white relative overflow-visible border-2 border-white dark:bg-gray-200 dark:text-gray-800 dark:border-gray-600 animate-pulse">
+//               <h1 className="mx-auto font-semibold text-lg">3</h1>
+//             </div>
+//             <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
+//               <h3 className="mb-3 font-bold text-gray-800 text-xl dark:text-gray-200">Event Title Three</h3>
+//               <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100 dark:text-gray-100">
+//                 Description for event three.
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//         <div className="absolute h-full w-0.5 bg-gray-300 dark:bg-gray-700 left-0 top-0 ml-8" />
+//       </section>
+//     )
+//   }
+  
+  
