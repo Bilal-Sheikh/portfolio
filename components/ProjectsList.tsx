@@ -14,7 +14,7 @@ export default function ProjectsList({ projects }: { projects: Projects[] }) {
     return (
         <div>
             {projects.map((project) => (
-                <div className="py-4">
+                <div className="py-4" key={project.id}>
                     <Card
                         className="group md:flex hover:bg-slate-100 hover:text-slate-900 transition-all duration-300 cursor-pointer"
                         key={project.id}

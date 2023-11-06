@@ -7,13 +7,12 @@ export default function Projects() {
     return (
         <div className="flex flex-col items-center justify-center w-full h-full">
             <section className="mt-8 mb-4 text-start w-4/5 items-start justify-start">
-                <p className="items-center text-2xl text-white font-bold tracking-wide pb-6">
+                <h2 className="scroll-m-20 border-b-4 pb-4 text-3xl font-semibold tracking-tight transition-colors">
                     Projects
-                </p>
-
-                <Separator className="w-full bg-zinc-500 mb-6" />
-
-                <ProjectsList projects={projects} />
+                </h2>
+                <div className="pt-5">
+                    <ProjectsList projects={projects} />
+                </div>
             </section>
         </div>
     );
