@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { File, Github, Linkedin, Twitter } from 'lucide-react';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { FaXTwitter } from 'react-icons/fa6';
 import { SiGoogledocs } from 'react-icons/si';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 export default function About() {
     return (

@@ -8,7 +8,9 @@ export default function TechList() {
             {tech.map((item) => (
                 <Card className="flex flex-col items-center justify-center hover:shadow-lg hover:shadow-sky-400/70 transition-all duration-300">
                     <CardHeader>{item.icon}</CardHeader>
-                    <CardContent className="text-sm md:text-lg whitespace-nowrap">{item.name}</CardContent>
+                    <CardContent className="text-sm md:text-lg whitespace-nowrap">
+                        {item.name}
+                    </CardContent>
                 </Card>
             ))}
         </div>

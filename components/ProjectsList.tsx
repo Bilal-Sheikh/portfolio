@@ -4,9 +4,9 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Projects } from '@/lib/projects';
+import { useRouter } from 'next/navigation';
 import { ExternalLink } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { useRouter } from 'next/navigation';
 
 export default function ProjectsList({ projects }: { projects: Projects[] }) {
     const router = useRouter();

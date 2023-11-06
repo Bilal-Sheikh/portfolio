@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectsList from '@/components/ProjectsList';
 import { projects } from '@/lib/projects';
-import { Separator } from '@/components/ui/separator';
 
 export default function Projects() {
     return (

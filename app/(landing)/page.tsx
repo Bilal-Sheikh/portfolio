@@ -31,7 +31,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="my-8 text-start w-full px-11 md:w-1/2 items-start justify-start">
+            <div className="my-8 text-start w-full px-11 md:px-0 md:w-1/2 items-start justify-start">
                 <p className="text-xl text-zinc-400">
                     Hi, my name is Bilal Sheikh. I'm a Full Stack Developer and
                     passionate about creating innovative web solutions. Welcome

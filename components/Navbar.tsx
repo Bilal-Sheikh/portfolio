@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { Menubar, MenubarMenu, MenubarTrigger } from '@/components/ui/menubar';
-import { Icons } from '@/lib/icons';
 
 export default function Navbar() {
     return (

@@ -1,8 +1,7 @@
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { projects } from '@/lib/projects';
-import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
+import { projects } from '@/lib/projects';
+import { Button } from '@/components/ui/button';
 
 export default function Project({ params }: { params: { id: string } }) {
     const project = projects.find(

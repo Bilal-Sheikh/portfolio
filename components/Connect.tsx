@@ -1,9 +1,9 @@
 import Link from 'next/link';
+import { ExternalLink } from 'lucide-react';
 import { FaXTwitter } from 'react-icons/fa6';
 import { SiGoogledocs } from 'react-icons/si';
 import { Button } from '@/components/ui/button';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { ExternalLink } from 'lucide-react';
 
 export default function Connect() {
     return (
