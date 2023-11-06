@@ -1,6 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import { File, Github, Linkedin, Twitter } from 'lucide-react';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { FaXTwitter } from 'react-icons/fa6';
+import { SiGoogledocs } from 'react-icons/si';
 
 export default function About() {
     return (
@@ -9,47 +12,34 @@ export default function About() {
                 <section className="mt-8 mb-4 text-start w-4/5 items-start justify-start">
                     <div className="flex items-center justify-between 20 border-b-4 pb-2 text-3xl font-semibold tracking-tight transition-colors">
                         <div>About me</div>
-                        <div className="flex items-center justify-center gap-5 pr-0 md:pr-10">
+                        <div className="flex items-center justify-center gap-2 md:gap-5 pr-0 md:pr-10">
                             <Link
-                                href={
-                                    'https://drive.google.com/file/d/1lnWreLfw8yRFUGREsPqP6KgJl4-T7fUY/view?usp=sharing'
-                                }
+                                href={process.env.RESUME || ''}
                                 className="cursor-pointer"
                                 target="_blank"
                             >
-                                <File size={25} className=" hover:fill-white" />
+                                <SiGoogledocs />
                             </Link>
                             <Link
-                                href={
-                                    'https://www.linkedin.com/in/bilalsheikh-bs/'
-                                }
+                                href={process.env.LINKEDIN || ''}
                                 className="cursor-pointer"
                                 target="_blank"
                             >
-                                <Linkedin
-                                    size={25}
-                                    className="hover:fill-white"
-                                />
+                                <AiFillLinkedin />
                             </Link>
                             <Link
-                                href={'https://github.com/Bilal-Sheikh'}
+                                href={process.env.GITHUB || ''}
                                 className="cursor-pointer"
                                 target="_blank"
                             >
-                                <Github
-                                    size={25}
-                                    className="hover:fill-white"
-                                />
+                                <AiFillGithub />
                             </Link>
                             <Link
-                                href={'https://twitter.com/72bilal_sheikh'}
+                                href={process.env.TWITTER || ''}
                                 className="cursor-pointer"
                                 target="_blank"
                             >
-                                <Twitter
-                                    size={25}
-                                    className="hover:fill-white"
-                                />
+                                <FaXTwitter />
                             </Link>
                         </div>
                     </div>

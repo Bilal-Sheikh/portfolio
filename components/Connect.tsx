@@ -7,11 +7,9 @@ import { ExternalLink } from 'lucide-react';
 
 export default function Connect() {
     return (
-        <div className="flex items-center justify-start gap-4">
+        <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
             <Link
-                href={
-                    'https://drive.google.com/file/d/1lnWreLfw8yRFUGREsPqP6KgJl4-T7fUY/view?usp=sharing'
-                }
+                href={process.env.RESUME || ''}
                 className="cursor-pointer"
                 target="_blank"
             >
@@ -29,7 +27,7 @@ export default function Connect() {
             </Link>
 
             <Link
-                href={'https://www.linkedin.com/in/bilalsheikh-bs/'}
+                href={process.env.LINKEDIN || ''}
                 className="cursor-pointer"
                 target="_blank"
             >
@@ -47,7 +45,7 @@ export default function Connect() {
             </Link>
 
             <Link
-                href={'https://github.com/Bilal-Sheikh'}
+                href={process.env.GITHUB || ''}
                 className="cursor-pointer"
                 target="_blank"
             >
@@ -65,7 +63,7 @@ export default function Connect() {
             </Link>
 
             <Link
-                href={'https://twitter.com/72bilal_sheikh'}
+                href={process.env.TWITTER || ''}
                 className="cursor-pointer"
                 target="_blank"
             >

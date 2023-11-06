@@ -2,16 +2,11 @@ import Link from 'next/link';
 import Connect from '@/components/Connect';
 import UsesList from '@/components/UsesList';
 import TechList from '@/components/TechList';
+import Timeline from '@/components/Timeline';
 import ProjectsList from '@/components/ProjectsList';
 import { projects } from '@/lib/projects';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import {
-    HoverCard,
-    HoverCardContent,
-    HoverCardTrigger,
-} from '@/components/ui/hover-card';
-import Timeline from '@/components/Timeline';
 
 export default function Home() {
     let latestProjects = [];
@@ -20,21 +15,25 @@ export default function Home() {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center w-full h-full pt-36">
-            <div className="w-1/2 items-start justify-start">
-                <div className="text-2xl text-start sm:text-6xl md:text-6xl font-semibold">
-                    Hello there! 👋 <br />
-                    I'm{' '}
+        <div className="flex flex-col items-center justify-center w-full h-full pt-20 md:pt-36">
+            <div className="justify-center items-center md:w-1/2 md:items-start md:justify-start">
+                <div>
+                    <span className="text-center md:text-start text-3xl md:text-6xl font-semibold">
+                        Hello there! 👋 <br />
+                        I'm{' '}
+                    </span>
                     <span className="inline-block relative">
                         <span className="absolute w-full h-4 bottom-0 -skew-x-12 bg-gradient-to-r from-fuchsia-500 to-cyan-500 text-transparent bg-300% animate-gradient" />
-                        <span className="relative text-6xl">Bilal Sheikh</span>
+                        <span className="relative w-full text-3xl md:text-6xl font-semibold">
+                            Bilal Sheikh
+                        </span>
                     </span>
                 </div>
             </div>
 
-            <div className="my-8 text-start w-1/2 items-start justify-start">
+            <div className="my-8 text-start w-full px-11 md:w-1/2 items-start justify-start">
                 <p className="text-xl text-zinc-400">
-                    Hi, my name is Bilal Sheikh. I'm a Full Stack Developer
+                    Hi, my name is Bilal Sheikh. I'm a Full Stack Developer and
                     passionate about creating innovative web solutions. Welcome
                     to my portfolio!
                 </p>

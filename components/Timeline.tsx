@@ -12,14 +12,14 @@ export default function Timeline() {
         <div className="max-w-7xl mx-auto w-full grid grid-cols-9 px-2">
             {/* <!-- Stack 1 --> */}
             <div className="col-span-4 w-full h-full">
-                <div className="w-full h-full p-2 md:pl-4 text-end">
+                <div className="w-full h-full p-2 md:ml-8">
                     <HoverCard>
                         <HoverCardTrigger asChild>
                             <Button
                                 variant="link"
-                                className="text-white text-xl pr-0 font-bold py-2"
+                                className="w-full justify-end items-end text-white text-base md:text-xl pr-0 font-bold py-2"
                             >
-                                Mar, 17 - Nov, 2020
+                                Mar, 17 - Nov, 20
                             </Button>
                         </HoverCardTrigger>
                         <HoverCardContent className="w-80">
@@ -37,13 +37,13 @@ export default function Timeline() {
                         </HoverCardContent>
                     </HoverCard>
 
-                    <div className="text-gray-100 sm:text-sm text-xs">
-                        <p className="font-semibold">
+                    <div className="text-gray-100 text-end text-xs md:text-sm">
+                        <h1 className="font-semibold">
                             Diploma in Computer Science
-                        </p>
-                        <p className="italic">
+                        </h1>
+                        <h1 className="italic">
                             Manav School of Polytechnic Akola
-                        </p>
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -60,13 +60,13 @@ export default function Timeline() {
                 <div className="absolute w-3 h-3 rounded-full bg-white z-10 text-white text-center mb-24" />
             </div>
 
-            <div className="col-span-4 w-full h-full pt-4 pb-14">
-                <div className="w-full h-full rounded-md p-2 md:pl-4">
+            <div className="col-span-4 w-full h-full md:pb-14">
+                <div className="w-full h-full rounded-md p-2 md:-ml-8">
                     <HoverCard>
                         <HoverCardTrigger asChild>
                             <Button
                                 variant="link"
-                                className="text-white text-xl pl-0 font-bold py-2"
+                                className="w-full justify-start items-start text-white text-base md:text-xl pl-0 font-bold md:py-2"
                             >
                                 Feb, 21 - Aug, 23
                             </Button>
@@ -109,12 +109,12 @@ export default function Timeline() {
 
             {/* <!-- Stack 3 --> */}
             <div className="col-span-4 w-full h-full">
-                <div className="w-full h-full p-2 md:pl-4 text-end">
+                <div className="w-full h-full p-2 md:ml-8 text-end">
                     <HoverCard>
                         <HoverCardTrigger asChild>
                             <Button
                                 variant="link"
-                                className="text-white text-xl pr-0 font-bold py-2"
+                                className="w-full justify-end items-end text-white text-base md:text-xl pr-0 font-bold pt-16 md:pt-0 md:py-2"
                             >
                                 Aug, 23 - Sep, 23
                             </Button>
@@ -159,16 +159,16 @@ export default function Timeline() {
             <div className="col-span-4 w-full h-full" />
             <div className="relative col-span-1 w-full h-full flex justify-center items-center">
                 <div className="h-full w-px bg-white" />
-                <div className="absolute w-3 h-3 rounded-full bg-white z-10 text-white text-center mb-20" />
+                <div className="absolute w-3 h-3 rounded-full bg-white z-10 text-white text-center mb-28 md:mb-20" />
             </div>
 
-            <div className="col-span-4 w-full h-full pt-8 pb-14">
-                <div className="w-full h-full rounded-md p-2 md:pl-4">
+            <div className="col-span-4 w-full h-full pt-4 pb-14">
+                <div className="w-full h-full rounded-md p-2 md:-ml-8">
                     <HoverCard>
                         <HoverCardTrigger asChild>
                             <Button
                                 variant="link"
-                                className="text-white text-xl pl-0 font-bold py-2"
+                                className="w-full justify-start items-start text-white text-base md:text-xl pl-0 font-bold md:py-2"
                             >
                                 Sep, 23 - Oct, 23
                             </Button>
