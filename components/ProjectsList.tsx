@@ -26,6 +26,7 @@ export default function ProjectsList({ projects }: { projects: Projects[] }) {
                                 alt={project.name}
                                 objectFit="contain"
                                 className="h-48 w-full md:h-full md:w-96"
+                                placeholder="blur"
                             />
                         </div>
                         <div>

@@ -60,9 +60,9 @@ export const projects: Projects[] = [
         id: 4,
         name: 'SkillForge - A course selling website',
         shortDescription:
-            'A full stack course selling website build using MERN stack and styled using Material UI.',
+            'This is a website for selling a full-stack course, built using the MERN stack and styled with Material UI.',
         LongDescription: `  
-        This was my very first full-stack website made using the MERN stack. As it was my first website, I didn't know how to design the UI of a website or how to make it responsive, so it's not that great-looking in the UI part. My primary focus was on the backend of the project. I wanted to know how websites work, how requests and responses work in a website, how React interacts with the servers, and why MERN is popular. This project helped me understand a great deal about how websites are designed and how they work under the hood. I learned about how to code in JavaScript, how to use Node JS, how HTTP works in Express JS, how databases work, what are SQL and No SQL databases, and many other interesting things. This project kickstarted my web development journey. I also learned a lot about how to use React JS, how to use UI libraries like Material UI for styling, how to use MongoDB, and what CRUD operations are. I also added a Razorpay payment gateway for purchasing courses. Later, I learned about TypeScript and why we should use it, so I decided to convert this project from JavaScript to TypeScript. I was still new to TypeScript, so this project doesn't have good types.
+        This was my very first full-stack website made using the MERN stack. As it was my first website, I didn't know how to design the UI of a website or how to make it responsive, so it's not that great-looking in the UI part. My primary focus was on the backend of the project. I wanted to know how websites work, how requests and responses work in a website, how React interacts with the backend, and why MERN is popular. This project helped me understand a great deal about how websites are designed and how they work under the hood. I learned about how to code in JavaScript, how to use Node JS, how HTTP works in Express JS, how databases work, what are SQL and No SQL databases, and many other interesting things. This project kickstarted my web development journey. I also learned a lot about how to use React JS, how to use UI libraries like Material UI for styling, how to use MongoDB, and what CRUD operations are. I also added a Razorpay payment gateway for purchasing courses. Later, I learned about TypeScript and why we should use it, so I decided to convert this project from JavaScript to TypeScript. I was still new to TypeScript, so this project doesn't have good types.
         
         What can this project do?
         
@@ -94,17 +94,16 @@ export const projects: Projects[] = [
         id: 3,
         name: 'Emotion based Music Player',
         shortDescription:
-            "Built a Emotion based Music Player in Python which utilizes the Deepface library for real-time emotion detection from a user's facial expressions. It also uses Streamlit for a user-friendly interface and OpenCV for video capture.",
-        LongDescription: `
-        This project was kind of a side project that I did after my main final year project was almost complete. I was curious about what the other simple use cases for face recognition could be other than using it for student attendance. I thought of doing something with the emotions that were detected along with the face. I decided to make an emotion-based music player that would capture the emotions of the detected face and play a song based on that detected emotion. For example, for a happy face, a happy song, and for a sad face, a sad song. A very simple Python project. After a few searches, I found DeepFace, a lightweight face recognition and facial attribute analysis library for Python.
+            "Built an Emotion based Music Player in Python which utilizes the Deepface library for real-time emotion detection from a user's facial expressions. It also uses Streamlit for a user-friendly interface and OpenCV for video capture.",
+        LongDescription: `        
+        This was kind of a side project that I did after my final year project. I was curious about what other use cases there could be for face recognition other than using it for student attendance. I thought of doing something with the emotions that were detected along with the face. I decided to make an emotion-based music player that would capture the emotions of the detected face and play a song based on that detected emotion. A very simple Python project. After a few searches, I found DeepFace, a lightweight face recognition and facial attribute analysis library for Python.
 
         What can this project do?
 
-        - Play a song based on the emotion on YouTube.
-        - Detect the face and show the detected emotion on screen.
+        - Play a song on YouTube based on the detected emotion.
+        - Detect the face and show the detected emotion on the screen.
 
         Libraries used:
-
         - Streamlit (for web browsers)
         - Deepface (for detecting emotions)
         `,
@@ -135,7 +134,6 @@ export const projects: Projects[] = [
         - SMTP (for email)
         - face_recognition
         `,
-
         img: StudentAttendance,
         projectLink: 'https://github.com/Bilal-Sheikh/Student-Face-Attendance',
         githubLink: 'https://github.com/Bilal-Sheikh/Student-Face-Attendance',
@@ -147,7 +145,7 @@ export const projects: Projects[] = [
         LongDescription:
             'This is my personal portfolio, created using NextJS 13 App Router, Shadcn UI, and Tailwind. I regularly update it with the new technologies that I learn and projects that I make.',
         img: Portfolio,
-        projectLink: '',
+        projectLink: 'https://bilal-sheikh-portfolio.vercel.app/',
         githubLink: 'https://github.com/Bilal-Sheikh/Portfolio',
     },
 ];

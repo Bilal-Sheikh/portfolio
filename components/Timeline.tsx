@@ -17,9 +17,9 @@ export default function Timeline() {
                         <HoverCardTrigger asChild>
                             <Button
                                 variant="link"
-                                className="w-full justify-end items-end text-white text-base md:text-xl pr-0 font-bold py-2"
+                                className="w-full justify-end items-end text-white text-sm md:text-xl pr-0 font-bold py-2"
                             >
-                                Mar, 17 - Nov, 20
+                                Aug, 2017 - Nov, 2020
                             </Button>
                         </HoverCardTrigger>
                         <HoverCardContent className="w-80">
@@ -66,9 +66,9 @@ export default function Timeline() {
                         <HoverCardTrigger asChild>
                             <Button
                                 variant="link"
-                                className="w-full justify-start items-start text-white text-base md:text-xl pl-0 font-bold md:py-2"
+                                className="w-full justify-start items-start text-white text-sm md:text-xl pl-0 font-bold md:py-2"
                             >
-                                Feb, 21 - Aug, 23
+                                Feb, 2021 - Aug, 2023
                             </Button>
                         </HoverCardTrigger>
                         <HoverCardContent className="w-80">
@@ -114,9 +114,9 @@ export default function Timeline() {
                         <HoverCardTrigger asChild>
                             <Button
                                 variant="link"
-                                className="w-full justify-end items-end text-white text-base md:text-xl pr-0 font-bold pt-16 md:pt-0 md:py-2"
+                                className="w-full justify-end items-end text-white text-sm md:text-xl pr-0 font-bold pt-16 md:pt-0 md:py-2"
                             >
-                                Aug, 23 - Sep, 23
+                                Aug, 2023 - Sep, 2023
                             </Button>
                         </HoverCardTrigger>
                         <HoverCardContent className="w-80">
@@ -168,9 +168,9 @@ export default function Timeline() {
                         <HoverCardTrigger asChild>
                             <Button
                                 variant="link"
-                                className="w-full justify-start items-start text-white text-base md:text-xl pl-0 font-bold md:py-2"
+                                className="w-full justify-start items-start text-white text-sm md:text-xl pl-0 font-bold md:py-2"
                             >
-                                Sep, 23 - Oct, 23
+                                Sep, 2023 - Oct, 2023
                             </Button>
                         </HoverCardTrigger>
                         <HoverCardContent className="w-80">

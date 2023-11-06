@@ -68,8 +68,8 @@ export default function About() {
                         better understanding of them. <br />
                         <br />I began my educational journey with a{' '}
                         <strong className="font-bold border-b-2 border-white">
-                            Diploma in Computer Engineering{' '}
-                        </strong>
+                            Diploma in Computer Engineering
+                        </strong>{' '}
                         at Manav School of Polytechnic in Akola. During this
                         program, I gained a solid foundation in computer
                         programming, working with languages like C, C++, Java,
@@ -80,8 +80,8 @@ export default function About() {
                         <strong className="font-bold border-b-2 border-white">
                             {' '}
                             Bachelor's degree in Computer Science and
-                            Engineering{' '}
-                        </strong>
+                            Engineering
+                        </strong>{' '}
                         at the College of Engineering and Technology in Akola.
                         This degree allowed me to delve deeper into computer
                         software and hardware, providing a comprehensive
