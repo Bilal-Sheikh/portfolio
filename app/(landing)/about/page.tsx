@@ -1,13 +1,58 @@
 import React from 'react';
+import Link from 'next/link';
+import { File, Github, Linkedin, Twitter } from 'lucide-react';
 
 export default function About() {
     return (
         <div>
             <div className="flex flex-col items-center justify-center w-full h-full pb-10">
                 <section className="mt-8 mb-4 text-start w-4/5 items-start justify-start">
-                    <h2 className="scroll-m-20 border-b-4 pb-2 text-3xl font-semibold tracking-tight transition-colors">
-                        About me
-                    </h2>
+                    <div className="flex items-center justify-between 20 border-b-4 pb-2 text-3xl font-semibold tracking-tight transition-colors">
+                        <div>About me</div>
+                        <div className="flex items-center justify-center gap-5 pr-0 md:pr-10">
+                            <Link
+                                href={
+                                    'https://drive.google.com/file/d/1lnWreLfw8yRFUGREsPqP6KgJl4-T7fUY/view?usp=sharing'
+                                }
+                                className="cursor-pointer"
+                                target="_blank"
+                            >
+                                <File size={25} className=" hover:fill-white" />
+                            </Link>
+                            <Link
+                                href={
+                                    'https://www.linkedin.com/in/bilalsheikh-bs/'
+                                }
+                                className="cursor-pointer"
+                                target="_blank"
+                            >
+                                <Linkedin
+                                    size={25}
+                                    className="hover:fill-white"
+                                />
+                            </Link>
+                            <Link
+                                href={'https://github.com/Bilal-Sheikh'}
+                                className="cursor-pointer"
+                                target="_blank"
+                            >
+                                <Github
+                                    size={25}
+                                    className="hover:fill-white"
+                                />
+                            </Link>
+                            <Link
+                                href={'https://twitter.com/72bilal_sheikh'}
+                                className="cursor-pointer"
+                                target="_blank"
+                            >
+                                <Twitter
+                                    size={25}
+                                    className="hover:fill-white"
+                                />
+                            </Link>
+                        </div>
+                    </div>
                     <p className="text-lg whitespace-pre-line font-light tracking-wide leading-loose min-h-screen pt-7">
                         Hello, My name is{' '}
                         <strong className="font-bold border-b-2 border-white">
