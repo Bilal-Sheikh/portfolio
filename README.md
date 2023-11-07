@@ -1,5 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## About the project
+
+This is my personal portfolio, created using NextJS 13. I regularly update it with the new technologies that I learn and projects that I make.
+
+Tech Stack:
+- Next JS
+- Tailwind CSS
+- Shadcn UI
+
+## NOTE: 
+
+If you are making your own version of this website, then please remove all of my personal information.
+
 ## Getting Started
 
 First, run the development server:
