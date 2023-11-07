@@ -60,7 +60,7 @@ export const projects: Projects[] = [
         id: 4,
         name: 'SkillForge - A course selling website',
         shortDescription:
-            'This is a website for selling a full-stack course, built using the MERN stack and styled with Material UI.',
+            'This website is a full-stack course-selling platform, developed using the MERN stack, and designed with the Material UI framework.',
         LongDescription: `  
         This was my very first full-stack website made using the MERN stack. As it was my first website, I didn't know how to design the UI of a website or how to make it responsive, so it's not that great-looking in the UI part. My primary focus was on the backend of the project. I wanted to know how websites work, how requests and responses work in a website, how React interacts with the backend, and why MERN is popular. This project helped me understand a great deal about how websites are designed and how they work under the hood. I learned about how to code in JavaScript, how to use Node JS, how HTTP works in Express JS, how databases work, what are SQL and No SQL databases, and many other interesting things. This project kickstarted my web development journey. I also learned a lot about how to use React JS, how to use UI libraries like Material UI for styling, how to use MongoDB, and what CRUD operations are. I also added a Razorpay payment gateway for purchasing courses. Later, I learned about TypeScript and why we should use it, so I decided to convert this project from JavaScript to TypeScript. I was still new to TypeScript, so this project doesn't have good types.
         
@@ -141,7 +141,7 @@ export const projects: Projects[] = [
     {
         id: 1,
         name: 'Portfolio',
-        shortDescription: 'This Website.',
+        shortDescription: 'This is my personal portfolio.',
         LongDescription:
             'This is my personal portfolio, created using NextJS 13 App Router, Shadcn UI, and Tailwind. I regularly update it with the new technologies that I learn and projects that I make.',
         img: Portfolio,
