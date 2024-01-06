@@ -65,4 +65,8 @@ export const tech = [
         name: 'Docker',
         icon: Icons.docker,
     },
+    {
+        name: 'Web Sockets',
+        icon: Icons.web_socket,
+    },
 ];

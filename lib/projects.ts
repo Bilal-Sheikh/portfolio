@@ -1,3 +1,4 @@
+import Synapse from '@/public/Synapse.png';
 import Portfolio from '@/public/Portfolio.png';
 import SkillForge from '@/public/SkillForge.png';
 import MusicPlayer from '@/public/MusicPlayer.png';
@@ -16,6 +17,25 @@ export interface Projects {
 }
 
 export const projects: Projects[] = [
+    {
+        id: 1,
+        name: 'Synapse - A Chat Application',
+        shortDescription:
+            'A chat application built with React JS, Node, and TypeScript. This project uses Socket.IO for web socket connections, Express for server, and Next UI for UI components',
+        LongDescription: `
+            I created a simple chat application in React.js using Socket.IO to explore the functionality of web sockets and understand the architecture behind chat platforms like WhatsApp and Facebook Messenger. For UI components, I utilized the Next UI library and Tailwind CSS for styling. This project proved immensely helpful in grasping the fundamental workings of web sockets.
+
+            Used :
+            - TypeScript
+            - React JS
+            - Tailwind CSS
+            - Next UI
+            - Socket IO
+            `,
+        img: Synapse,
+        projectLink: 'https://synapse-chat.netlify.app/',
+        githubLink: 'https://github.com/Bilal-Sheikh/Synapse',
+    },
     {
         id: 5,
         name: 'Beyond Bazaar - An E-commerce website',
